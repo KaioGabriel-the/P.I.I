@@ -6,3 +6,12 @@
 ## Questão 02
 
 ## Questão 03 
+
+## Questão 04
+
+## Questão 05
+> * textContent : Retorna todo o texto do elemento, incluindo o que está oculto por CSS. Todavia, não interpreta o HTML.
+
+> * innerText: Retorna todo o texto do elemento, mas ignora os elementos ocultos do css.
+
+> * innerHTML : Retorna ou define o HTML interno completo do elemento.
