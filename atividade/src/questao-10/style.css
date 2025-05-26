@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+input[type="number"] {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.operacoes {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 1rem;
+  font-weight: bold;
+}
