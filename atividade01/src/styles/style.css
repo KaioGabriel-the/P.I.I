@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #abe4ff;
+    color: #d9abff;
+}
+
+.title-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease-in-out; /* <- Aqui está o ajuste */
+}
+
+.title {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #d9abff,
+    0 0 20px #d9abff,
+    0 0 25px #d9abff;
+} 
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9abff;
+  border: 0.1rem solid aliceblue;
+  max-width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.question-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid #d9abff;
+  max-width: 75%;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* efeito ao passar o mouse na div inteira */
+.question-item:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #d9abff,
+    0 0 20px #d9abff,
+    0 0 25px #d9abff;
+}
+
+/* estilizar o link para ocupar o espaço todo do h2 e tirar sublinhado */
+.question-item h2 a {
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
