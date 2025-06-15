@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/question05-style.css">
+  <title>Carregamento de Imagem via Select</title>
+</head>
+<body>
+  <h1>Selecione uma Imagem</h1>
+
+  <select id="seletorImagens">
+    <option value="">-- Escolha uma imagem --</option>
+    <option value="https://picsum.photos/id/237/500/300">Imagem 1 (Cachorro)</option>
+    <option value="https://picsum.photos/id/238/500/300">Imagem 2 (Natureza)</option>
+    <option value="https://picsum.photos/id/239/500/300">Imagem 3 (Cidade)</option>
+  </select>
+
+  <div id="resultado"></div>
+
+  <script>
+    const seletorImagens = document.getElementById('seletorImagens');
+    const resultado = document.getElementById('resultado');
+
+    seletorImagens.addEventListener('change', () => {
+      // Limpar resultado anterior
+      resultado.innerHTML = '';
+
+      // Obter o valor selecionado (URL da imagem)
+      const urlImagem = seletorImagens.value;
+
+      if (urlImagem === '') {
+        // Nenhuma imagem selecionada, sai da função
+        return;
+      }
+
+      // Criar elemento img
+      const img = document.createElement('img');
+
+      // Definir a fonte da imagem para o URL selecionado
+      img.src = urlImagem;
+      img.alt = 'Imagem selecionada';
+
+      // Adicionar a imagem à div resultado
+      resultado.appendChild(img);
+    });
+  </script>
+</body>
+</html>
