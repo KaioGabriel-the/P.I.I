@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2CA80; /* bege/amarelo claro como fundo geral */
+    margin: 0;
+    padding: 0;
+}
+
+header.titulo {
+    background-color: #2291F2; /* azul forte no cabeçalho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2.titulo2 {
+    background-color: #0CF29E; /* verde água vibrante para subtítulo */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    background-color: #DCF2EA; /* verde muito claro como fundo do container */
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2291F2; /* azul forte para texto do label */
+}
+
+.container input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    border: 2px solid #0CF29E; /* borda verde água vibrante */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#vazio {
+    color: #F25774;             /* vermelho rosado para chamar atenção */
+    font-size: 18px;            /* tamanho legível, mas sem exagero */
+    font-weight: bold;          /* em negrito para enfatizar */
+    margin-top: 10px;           /* espaçamento acima para separar do input */
+    text-align: center;         /* centraliza o texto */
+    font-family: Arial, sans-serif;
+}
+
+#adicionarBtn {
+    background-color: #05F283; /* verde neon no botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#adicionarBtn:hover {
+    background-color: #0CF29E; /* verde água vibrante no hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #2291F2; /* cabeçalho da tabela em azul forte */
+    color: white;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}

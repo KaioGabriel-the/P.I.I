@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="src/script/script.js" defer></script>
+</head>
+<body>
+    <header class="titulo">
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <main>
+        <h2 class="titulo2">Gerenciamento de Tarefas</h2>
+
+        <div class="container">
+            <div>
+                <label for="descricaoTarefa">Descrição da Tarefa:</label>
+                <input type="text" id="descricaoTarefa" placeholder="Ex: Concluir relatório">
+                <h1 id="vazio"></h1>
+            </div>
+
+            <button id="adicionarBtn">Adicionar Tarefa</button>
+
+            <table id="tabelaTarefas">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Data de Início</th>
+                        <th>Data de Conclusão</th>
+                        <th>Concluir</th>
+                        <th>Remover</th>
+                        <th>Reabrir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela serão adicionadas aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
